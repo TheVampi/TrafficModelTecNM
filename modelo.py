@@ -9,7 +9,7 @@ bicicletasArray=[]
 indice_actual = 0
 
 def escrituraArchivo():
-    with open(r'C:\Users\TTVFernando\Desktop\ModeloSemaforo\valores.csv', 'w+', newline='') as file:
+    with open(r'C:\Users\luisi\Desktop\DataStructures-TecNM\Python\lab08Semaforo\valores.csv', 'w+', newline='') as file:
         file.write('valor1' + "|" + 'valor2' + '\n')
         writer = csv.writer(file, delimiter='|', quotechar='"', quoting=csv.QUOTE_NONNUMERIC)
         for i in range(20):
@@ -21,7 +21,7 @@ def escrituraArchivo():
 escrituraArchivo()
 
 def leerArchivo():
-    with open(r'C:\Users\TTVFernando\Desktop\ModeloSemaforo\valores.csv', 'r') as file:
+    with open(r'C:\Users\luisi\Desktop\DataStructures-TecNM\Python\lab08Semaforo\valores.csv', 'r') as file:
         reader = csv.reader(file, delimiter='|')
         next(reader)  # Saltar la primera fila
         for row in reader:
